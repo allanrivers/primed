@@ -1,0 +1,35 @@
+body {
+  background: #ff8686;
+  background: -webkit-gradient(linear, left top, right top, from(#ff8686), color-stop(51%, #fffb94), to(#7ae9ff));
+  background: linear-gradient(90deg, #ff8686 0%, #fffb94 51%, #7ae9ff 100%);
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=style.css.map */

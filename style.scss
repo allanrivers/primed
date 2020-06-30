@@ -1,0 +1,28 @@
+body {
+    background: rgb(255,134,134);
+    background: linear-gradient(90deg, rgba(255,134,134,1) 0%, rgba(255,251,148,1) 51%, rgba(122,233,255,1) 100%);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    li {
+        list-style-type: none
+    }
+
+    li:hover {
+        transform: scale(1.1);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        margin-right: 1.2rem;
+        font-size: 1.3rem;
+    }
+
+
+}
+
