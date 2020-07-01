@@ -8,6 +8,19 @@ body {
   background: linear-gradient(90deg, #ff8686 0%, #fffb94 51%, #7ae9ff 100%);
 }
 
+body #arrow {
+  position: fixed;
+  bottom: 40px;
+  font-size: 10rem;
+  right: 40px;
+  z-index: 1;
+}
+
+body #arrow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,6 +28,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 nav #logo {
@@ -169,14 +183,29 @@ nav ul a {
 }
 
 #products {
+  height: 80vh;
+  position: relative;
+}
+
+#products .translateCards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
 }
 
-#products .red {
+#products .translateCards .red {
   border: black solid 1px;
   width: 25%;
   border-radius: 5px;
@@ -194,12 +223,12 @@ nav ul a {
           align-items: flex-end;
 }
 
-#products .red .card-footer {
+#products .translateCards .red .card-footer {
   width: 100%;
   text-align: center;
 }
 
-#products .red .card-footer button {
+#products .translateCards .red .card-footer button {
   cursor: pointer;
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -207,12 +236,12 @@ nav ul a {
   padding: 0.4rem 0;
 }
 
-#products .red .card-footer button:hover {
+#products .translateCards .red .card-footer button:hover {
   background-color: red;
   color: white;
 }
 
-#products .green {
+#products .translateCards .green {
   border: black solid 1px;
   width: 25%;
   border-radius: 5px;
@@ -230,12 +259,12 @@ nav ul a {
           align-items: flex-end;
 }
 
-#products .green .card-footer {
+#products .translateCards .green .card-footer {
   width: 100%;
   text-align: center;
 }
 
-#products .green .card-footer button {
+#products .translateCards .green .card-footer button {
   cursor: pointer;
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -243,12 +272,12 @@ nav ul a {
   padding: 0.4rem 0;
 }
 
-#products .green .card-footer button:hover {
+#products .translateCards .green .card-footer button:hover {
   background-color: green;
   color: white;
 }
 
-#products .blue {
+#products .translateCards .blue {
   border: black solid 1px;
   width: 25%;
   border-radius: 5px;
@@ -266,12 +295,12 @@ nav ul a {
           align-items: flex-end;
 }
 
-#products .blue .card-footer {
+#products .translateCards .blue .card-footer {
   width: 100%;
   text-align: center;
 }
 
-#products .blue .card-footer button {
+#products .translateCards .blue .card-footer button {
   cursor: pointer;
   font-size: 1rem;
   margin-bottom: 1rem;
@@ -279,7 +308,7 @@ nav ul a {
   padding: 0.4rem 0;
 }
 
-#products .blue .card-footer button:hover {
+#products .translateCards .blue .card-footer button:hover {
   background-color: blue;
   color: white;
 }
@@ -289,13 +318,21 @@ nav ul a {
   min-height: 50vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 15rem;
 }
 
 .newsletter h1 {
-  color: white;
+  color: #333;
   font-size: 3rem;
   text-align: center;
   padding-top: 2rem;
+}
+
+.newsletter #underline {
+  width: 20%;
+  background-color: #333;
+  height: 5px;
+  margin: -25px auto;
 }
 
 .newsletter form {
@@ -308,6 +345,7 @@ nav ul a {
           flex-direction: column;
   width: 75%;
   margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .newsletter form input {
@@ -319,5 +357,66 @@ nav ul a {
 
 .newsletter form input [type=submit] {
   width: 50%;
+}
+
+.newsletter #created {
+  text-align: center;
+  color: red;
+}
+
+#contactUs {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 100vh;
+  position: relative;
+  margin-top: 5rem;
+}
+
+#contactUs .translate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+#contactUs .translate h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#contactUs .translate #underline {
+  width: 9%;
+  background-color: #333;
+  height: 5px;
+  margin: -30px auto;
+}
+
+#contactUs .translate .contactForm {
+  margin-top: 5rem;
+}
+
+#contactUs .translate .contactForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#contactUs .translate .contactForm form input {
+  height: 1.4rem;
+}
+
+#contactUs .translate .contactForm form input, #contactUs .translate .contactForm form textarea {
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,22 @@
+// Vertical alignment
+// 
+// 
+// 
+// 
+
+$translate: translate(-50%, -50%);
+$absolute: absolute;
+$relative: relative;
+$topNdLeft: 50%;
+
+
+
+// HTML and Body css (including the arrow icon)
+// 
+// 
+// 
+// 
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,14 +24,39 @@ html {
 body {
     background: rgb(255,134,134);
     background: linear-gradient(90deg, rgba(255,134,134,1) 0%, rgba(255,251,148,1) 51%, rgba(122,233,255,1) 100%);
+
+    #arrow {
+        position: fixed;
+        bottom: 40px;
+        font-size: 10rem;
+        right: 40px;
+        z-index: 1;
+    }
+    
+    #arrow:hover {
+        transform: scale(1.1);
+    }
+    
+
 }
 
 
 
+
+
+
+
+
 // Navbar css
+// 
+// 
+// 
+// 
+
 nav { 
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 
     #logo {
         width: 7rem;
@@ -48,7 +92,13 @@ nav {
 }
 
 
+
+
+
 // Image css
+// 
+// 
+// 
 
 .front {
     text-align: center;
@@ -151,13 +201,26 @@ nav {
 
 
 // Cards css
+// 
+// 
+// 
+// 
 
 #products {
 
-    display: flex;
-    justify-content: space-around;
 
+    height: 80vh;
+    position: $relative;
 
+    .translateCards {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        position: $absolute;
+        top: $topNdLeft;
+        left: $topNdLeft;
+        transform: $translate;
+        width: 100%;
 
      // red card
      .red {
@@ -264,29 +327,48 @@ nav {
 
 
     }
+}
 
 }
 
 
+
+
+
+// Newsletter
+// 
+// 
+// 
+// 
 
 .newsletter {
     margin-top: 10rem;
     min-height: 50vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 15rem;
 
     h1 {
-        color: white;
+        color: #333;
         font-size: 3rem;
         text-align: center;
         padding-top: 2rem;
     }
+
+    #underline {
+        width: 20%;
+        background-color: #333;
+        height: 5px;
+        margin: -25px auto;
+    }
+
 
     form { 
         display: flex;
         flex-direction: column;
         width: 75%;
         margin: 0 auto;
+        margin-top: 4rem;
 
 
 
@@ -301,4 +383,76 @@ nav {
             width: 50%;
         }
     }
+
+    #created {
+        text-align: center;
+        color: red;
+    }
+}
+
+
+
+
+
+// Contact Us 
+// 
+// 
+// 
+// 
+
+#contactUs {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100vh;
+    position: $relative;
+    margin-top: 5rem;
+
+    .translate {
+        position: $absolute;
+        top: $topNdLeft;
+        left: $topNdLeft;
+        transform: $translate;
+        width: 80%;
+    
+
+
+    h1 {
+        font-size: 3rem; 
+        color: #333;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    #underline {
+        width: 9%;
+        background-color: #333;
+        height: 5px;
+        margin: -30px auto;
+    }
+
+    .contactForm {
+        margin-top: 5rem;
+        
+        form {
+        display: flex;  
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+
+            input {
+                height: 1.4rem;
+            }
+        
+            input, textarea {
+                margin-top: 1rem;
+                border-radius: 5px;
+                border: none;
+
+
+            }    
+         }
+
+    }
+}
+    
+
 }
