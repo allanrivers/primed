@@ -2,44 +2,22 @@
 
 
     <div class="red">
-        <div class="card-top">
-            <h1>Red Ink</h1>
-        </div>
-
-        <div class="card-body">
-
-        </div>
-
         <div class="card-footer">
             <button>Red</button>
         </div>
     </div>
 
-    <div class="red">
-        <div class="card-top">
-            <h1>Red Ink</h1>
-        </div>
 
-        <div class="card-body">
-
-        </div>
-
+    <div class="green">
         <div class="card-footer">
-            <button>Red</button>
+            <button>Green</button>
         </div>
     </div>
 
-    <div class="red">
-        <div class="card-top">
-            <h1>Red Ink</h1>
-        </div>
 
-        <div class="card-body">
-
-        </div>
-
+    <div class="blue">
         <div class="card-footer">
-            <button>Red</button>
+            <button>Blue</button>
         </div>
     </div>
 
