@@ -316,7 +316,7 @@ nav ul a {
 .newsletter {
   margin-top: 10rem;
   min-height: 50vh;
-  width: 100%;
+  width: 80%;
   background-color: rgba(0, 0, 0, 0.2);
   margin-bottom: 15rem;
 }
@@ -343,25 +343,15 @@ nav ul a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 75%;
   margin: 0 auto;
   margin-top: 4rem;
+  width: 25%;
 }
 
 .newsletter form input {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  height: 1.6rem;
-}
-
-.newsletter form input [type=submit] {
-  width: 50%;
-}
-
-.newsletter #created {
-  text-align: center;
-  color: red;
 }
 
 #contactUs {
