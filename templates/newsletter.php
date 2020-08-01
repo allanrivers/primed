@@ -19,7 +19,7 @@
                 </div>
             </div>';
         }   else {
-            echo 'error';
+
         }
 
         mysqli_close($conn);
@@ -37,8 +37,8 @@
     <div id="underline"></div>
 
     <form id="newsletterForm" action="./#newNewsletter" method="post">
-        <input type="text" name="name" placeholder="Please enter your name" required>
-        <input type="email" name="email" placeholder="Please enter your email" required>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
         <input id="submit" type="submit" name="submit" value="Submit">
     </form>
 </div>
