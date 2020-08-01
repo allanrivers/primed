@@ -10,6 +10,9 @@
        
         $headers = 'From: ' . $name;
         mail($to, $subject, $name, $email, $headers);
+        echo 'mail sent';
+    }   else {
+        echo 'error';
     }
 
 
@@ -24,7 +27,7 @@
                 <input type="text" name="contactName"       placeholder="Please enter your name">
                 <input type="email" name="contactEmail"         placeholder="Please enter your email">
                 <textarea name="contact" cols="30" rows="10"  placeholder="Please enter your message"></textarea>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" name="submit">
             </form>
         </div>
     </div>
