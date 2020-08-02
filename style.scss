@@ -505,4 +505,16 @@ nav {
     nav {
         display: inline-block;
     }
+
+
+    .front {
+
+        position: relative;
+        .words {
+            @include absoluteMiddle;
+
+
+        }
+
+    }
 }
